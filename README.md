@@ -1,49 +1,45 @@
-# Fake News Classification
+# 📰 Fake News Classification
 
-## Project Overview
-This project aims to classify news articles as **real** or **fake** using Natural Language Processing (NLP) and machine learning techniques. The dataset consists of labeled news articles, and we use logistic regression and other classifiers to determine their authenticity.
+## 📌 Overview
+This project aims to classify news articles as **Real** or **Fake** using **Machine Learning** techniques. We use **TF-IDF vectorization** for text processing and apply **Logistic Regression** for classification.
 
 ## 📂 Dataset
-- The dataset contains a collection of news articles labeled as **"real"** (1) or **"fake"** (0).
-- Preprocessing steps include:
-  - Handling missing values
-  - Tokenization & vectorization (TF-IDF)
-  - Removing stopwords & special characters
+The dataset consists of labeled news articles with text and corresponding labels:
+- **Real (1)** - Verified news articles
+- **Fake (0)** - Misinformation or misleading articles
 
-## 🚀 Technologies Used
-- **Python** (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
-- **Machine Learning Models**: Logistic Regression, SVM, Random Forest
-- **Natural Language Processing (NLP)**: TF-IDF Vectorization
-- **Git & GitHub**: Version control
+## 🛠️ Installation & Setup
+To run this project locally, follow these steps:
 
-## 📜 Installation & Setup
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/fake-news-classification.git
-   cd fake-news-classification
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Run the model:
-   ```sh
-   python train_model.py
-   ```
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/fake-news-classification.git
+cd fake-news-classification
+```
 
-##  Model Performance
-- Evaluated using **K-Fold Cross-Validation**
-- Performance Metrics: Accuracy, Precision, Recall, F1-Score
-- Confusion matrix visualization included
+### 2️⃣ Install Dependencies
+Ensure you have Python installed, then install required libraries:
+```sh
+pip install -r requirements.txt
+```
 
-## 📊 Results
-- Logistic Regression achieves an accuracy of **~91%**
+### 3️⃣ Run the Model
+```sh
+python train_model.py
+```
 
-## 📌 Usage
-1. Upload a news article text.
-2. The model predicts whether it is **Real (1) or Fake (0)**.
-3. Outputs confidence scores & highlights key features influencing the prediction.
+## ⚙️ Model Training
+- Uses **TF-IDF Vectorization** to process text data.
+- Implements **Logistic Regression** for binary classification.
+- Evaluates model performance using **K-Fold Cross-Validation**.
 
+## 📊 Results & Evaluation
+The model is evaluated using:
+- **Accuracy Score**
+- **Confusion Matrix**
+- **Precision, Recall, F1-score**
 
-
+## 📈 Visualization
+- **Confusion Matrix Heatmap**
+- **K-Fold Cross-Validation Accuracy Graph**
 
